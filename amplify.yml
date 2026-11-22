@@ -1,0 +1,15 @@
+# AWS Amplify build settings.
+# The site is plain HTML, CSS and JavaScript, so there is nothing to compile.
+# Amplify publishes only the contents of the site/ folder.
+version: 1
+frontend:
+  phases:
+    build:
+      commands:
+        - echo "Static site - no build step needed"
+  artifacts:
+    baseDirectory: site
+    files:
+      - '**/*'
+  cache:
+    paths: []

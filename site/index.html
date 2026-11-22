@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- EDIT ME: your name and a one-line description (shows in the browser tab and search results) -->
+  <title>Your Name | Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name, student builder.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">Hello, I'm</p>
+      <!-- EDIT ME: your name -->
+      <h1>Your Name</h1>
+      <!-- EDIT ME: a short tagline -->
+      <p class="tagline">Computer Science student · Cloud &amp; AI enthusiast · Builder</p>
+      <nav class="links" aria-label="Profiles">
+        <!-- EDIT ME: replace the # with your own links, or delete the ones you don't use -->
+        <a class="button" href="https://github.com/your-username">GitHub</a>
+        <a class="button" href="https://www.linkedin.com/in/your-profile">LinkedIn</a>
+        <a class="button button-ghost" href="mailto:you@example.com">Email me</a>
+      </nav>
+      <!-- Stretch goal 1 fills this in once you add your visitor counter URL to config.js -->
+      <p id="visitor-count" class="visitor-count" hidden></p>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="container section">
+      <h2>About me</h2>
+      <!-- EDIT ME: two or three sentences about you -->
+      <p>
+        I'm a student who likes building things and figuring out how they work.
+        Right now I'm learning cloud computing with my university's AWS Student Builder Group.
+        This site is hosted on AWS Amplify, and I deployed it myself.
+      </p>
+    </section>
+
+    <section id="skills" class="container section">
+      <h2>Skills</h2>
+      <!-- EDIT ME: add, remove or rename skills -->
+      <ul class="chips">
+        <li>HTML &amp; CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Git &amp; GitHub</li>
+        <li>AWS Amplify</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container section">
+      <h2>Projects</h2>
+      <div class="cards">
+        <!-- EDIT ME: one <article> per project. Copy and paste a block to add more. -->
+        <article class="card">
+          <h3>This portfolio</h3>
+          <p>A static website deployed with AWS Amplify Hosting. Every push to GitHub publishes a new version automatically.</p>
+          <p class="tags">HTML · CSS · AWS Amplify</p>
+          <a href="https://github.com/your-username/your-repo">View code →</a>
+        </article>
+        <article class="card">
+          <h3>Project two</h3>
+          <p>What it does, who it's for, and the one thing you're proudest of.</p>
+          <p class="tags">Python · Flask</p>
+          <a href="#">View project →</a>
+        </article>
+        <article class="card">
+          <h3>Project three</h3>
+          <p>A coursework project, a hackathon entry, or something you built for fun.</p>
+          <p class="tags">Java</p>
+          <a href="#">View project →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Stretch goal 2: this section appears once you add your contact form URL to config.js -->
+    <section id="contact" class="container section" hidden>
+      <h2>Get in touch</h2>
+      <form id="contact-form" class="contact-form" novalidate>
+        <label>Name
+          <input type="text" name="name" maxlength="100" required autocomplete="name">
+        </label>
+        <label>Email
+          <input type="email" name="email" maxlength="200" required autocomplete="email">
+        </label>
+        <label>Message
+          <textarea name="message" rows="5" maxlength="2000" required></textarea>
+        </label>
+        <!-- Spam trap: real visitors never see or fill this field -->
+        <label class="trap" aria-hidden="true">Website
+          <input type="text" name="website" tabindex="-1" autocomplete="off">
+        </label>
+        <button type="submit" class="button">Send message</button>
+        <p id="contact-status" class="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Your Name · Built at an AWS Student Builder Group workshop · Hosted on AWS Amplify</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
